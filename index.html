@@ -19,6 +19,35 @@
       justify-content: space-between;
       align-items: center;
     }
+    nav {
+      background-color: #444;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .marquee {
+      background-color: #222;
+      color: #fff;
+      padding: 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
@@ -74,6 +103,16 @@
     <div>🛒 Sepet (0)</div>
   </header>
 
+  <nav>
+    <a href="#">Tüm Ürünler</a>
+    <a href="#">Kılıflar</a>
+    <a href="#">Şarj Aletleri</a>
+    <a href="#">Hoparlörler</a>
+    <a href="#">Aksesuarlar</a>
+  </nav>
+
+  <div class="marquee"><span>📢 KAMPANYA! 2 ÜRÜN ALANA 1 HEDİYE! | ÜCRETSİZ KARGO! | %50'YE VARAN İNDİRİMLER!</span></div>
+
   <div class="slogan">"Tarzın korumanla başlar, OkanStore ile tamamlanır."</div>
 
   <section class="products">
@@ -93,6 +132,36 @@
       <img src="https://via.placeholder.com/200x200?text=Hoparl%C3%B6r" alt="Bluetooth Hoparlör">
       <h3>Bluetooth Hoparlör</h3>
       <p>₺399</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Kablosuz+Kulakl%C4%B1k" alt="Kablosuz Kulaklık">
+      <h3>Bluetooth Kulaklık</h3>
+      <p>₺299</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Ara%C3%A7+Tutucu" alt="Araç Telefon Tutucu">
+      <h3>Manyetik Araç Tutucu</h3>
+      <p>₺159</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Powerbank" alt="Powerbank">
+      <h3>10.000 mAh Powerbank</h3>
+      <p>₺349</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Usb+Led" alt="USB LED Işık">
+      <h3>USB LED Işık</h3>
+      <p>₺49</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Telefon+Stand%C4%B1" alt="Telefon Standı">
+      <h3>Masaüstü Telefon Standı</h3>
+      <p>₺99</p>
       <button>Sepete Ekle</button>
     </div>
   </section>
