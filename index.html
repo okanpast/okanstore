@@ -8,16 +8,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #a9a9a9; /* Nardo Gri */
+      background-color: #a9a9a9;
       color: #333;
     }
-    header {
+    header, footer {
       background-color: #333;
       color: white;
       padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: center;
     }
     nav {
       background-color: #444;
@@ -29,7 +27,6 @@
       margin: 0 1rem;
       color: white;
       text-decoration: none;
-      font-weight: bold;
     }
     .marquee {
       background-color: #222;
@@ -37,7 +34,6 @@
       padding: 0.5rem;
       white-space: nowrap;
       overflow: hidden;
-      box-sizing: border-box;
     }
     .marquee span {
       display: inline-block;
@@ -48,14 +44,9 @@
       0%   { transform: translate(0, 0); }
       100% { transform: translate(-100%, 0); }
     }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
     .slogan {
       text-align: center;
-      margin: 1rem 0;
-      font-size: 1.2rem;
+      margin: 1rem;
       font-style: italic;
     }
     .products {
@@ -67,19 +58,13 @@
     .product {
       background: white;
       padding: 1rem;
+      text-align: center;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
     }
     .product img {
       max-width: 100%;
       height: auto;
-    }
-    .product h3 {
-      margin: 0.5rem 0;
-    }
-    .product p {
-      color: #666;
     }
     .product button {
       background-color: #333;
@@ -89,85 +74,41 @@
       cursor: not-allowed;
       opacity: 0.5;
     }
-    footer {
+    h2 {
       text-align: center;
-      padding: 1rem;
-      background-color: #222;
-      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">ÖzokStore</div>
-    <div>🛒 Sepet (0)</div>
-  </header>
-
+  <header><strong>OkanStore</strong> 🛒 Sepet (0)</header>
   <nav>
     <a href="#">Tüm Ürünler</a>
     <a href="#">Kılıflar</a>
     <a href="#">Şarj Aletleri</a>
     <a href="#">Hoparlörler</a>
     <a href="#">Aksesuarlar</a>
+    <a href="#">En Avantajlı</a>
   </nav>
-
   <div class="marquee"><span>📢 KAMPANYA! 2 ÜRÜN ALANA 1 HEDİYE! | ÜCRETSİZ KARGO! | %50'YE VARAN İNDİRİMLER!</span></div>
-
   <div class="slogan">"Tarzın korumanla başlar, OkanStore ile tamamlanır."</div>
 
+  <h2>En Avantajlı Ürünler</h2>
   <section class="products">
     <div class="product">
-      <img src="https://cdn.dsmcdn.com/mnresize/400/600/ty1246/product/media/images/prod/SPM/PIM/20240406/10/7e94b2e6-9893-3874-bde6-3cfa3ac348a8/1_org.jpg" alt="iPhone 16 Kılıf">
+      <img src="images/kilif.jpg" alt="iPhone 16 Kılıf">
       <h3>iPhone 16 Kılıf</h3>
       <p>₺199</p>
       <button>Sepete Ekle</button>
     </div>
     <div class="product">
-      <img src="https://productimages.hepsiburada.net/s/308/1500/110000302105019.jpg" alt="Type-C Hızlı Şarj">
-      <h3>Type-C Hızlı Şarj</h3>
-      <p>₺249</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product">
-      <img src="https://cdn.akakce.com/z/jbl/jbl-go-3-bluetooth-hoparlor-z.jpg" alt="Bluetooth Hoparlör">
+      <img src="images/hoparlor.jpg" alt="Bluetooth Hoparlör">
       <h3>Bluetooth Hoparlör</h3>
       <p>₺399</p>
       <button>Sepete Ekle</button>
     </div>
-    <div class="product">
-      <img src="https://cdn.akakce.com/z/baseus/baseus-encok-w04-pro-tws-bluetooth-kulaklik-z.jpg" alt="Bluetooth Kulaklık">
-      <h3>Bluetooth Kulaklık</h3>
-      <p>₺299</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product">
-      <img src="https://cdn.dsmcdn.com/mnresize/400/600/ty830/product/media/images/20230521/12/36431a6e-27b4-40ea-b8c6-00877dcd279b/1_org.jpg" alt="Araç Telefon Tutucu">
-      <h3>Manyetik Araç Tutucu</h3>
-      <p>₺159</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product">
-      <img src="https://productimages.hepsiburada.net/s/392/1500/110000417076481.jpg" alt="Powerbank">
-      <h3>10.000 mAh Powerbank</h3>
-      <p>₺349</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product">
-      <img src="https://cdn.dsmcdn.com/mnresize/400/600/ty524/product/media/images/20220926/10/181327723/571202188/1/1_org.jpg" alt="USB LED Işık">
-      <h3>USB LED Işık</h3>
-      <p>₺49</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product">
-      <img src="https://cdn.dsmcdn.com/mnresize/400/600/ty838/product/media/images/20230529/13/370fa791-948b-429c-8f5b-1b1f6b8b3364/1_org.jpg" alt="Telefon Standı">
-      <h3>Masaüstü Telefon Standı</h3>
-      <p>₺99</p>
-      <button>Sepete Ekle</button>
-    </div>
   </section>
 
-  <footer>
-    &copy; 2025 ÖzokStore | İletişim: okan@okanstore.com
-  </footer>
+  <footer>&copy; 2025 OkanStore | İletişim: okan@okanstore.com</footer>
 </body>
 </html>
