@@ -78,6 +78,26 @@
       text-align: center;
       margin-top: 2rem;
     }
+
+    /* Batuhan'a özel stiller */
+    #batuhanSurprise {
+      text-align: center;
+      margin: 3rem auto;
+    }
+    .batuhan-box {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      font-weight: bold;
+    }
+    .batuhan-box:hover {
+      background: #c2185b;
+      transform: scale(1.1) rotate(-2deg);
+    }
   </style>
 </head>
 <body>
@@ -109,6 +129,19 @@
     </div>
   </section>
 
+  <!-- Batuhan için sürpriz -->
+  <div id="batuhanSurprise">
+    <h2>🎁 Batuhan’a Özel Bir Sürpriz Var!</h2>
+    <div class="batuhan-box" title="Tıkla ama dikkatli ol 😎">👀 Kutuyu açmak ister misin?</div>
+  </div>
+
   <footer>&copy; 2025 OkanStore | İletişim: okan@okanstore.com</footer>
+
+  <!-- Sürpriz kutu mesajı -->
+  <script>
+    document.querySelector('.batuhan-box').addEventListener('click', function() {
+      alert('🎉 Sürpriz Batuhan! Bu site senin için Okan tarafından özel hazırlandı! Sen bir efsanesin! 🚀');
+    });
+  </script>
 </body>
 </html>
