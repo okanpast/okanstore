@@ -56,6 +56,7 @@
       padding: 1rem;
     }
     .product {
+      position: relative;
       background: white;
       padding: 1rem;
       text-align: center;
@@ -74,12 +75,18 @@
       cursor: not-allowed;
       opacity: 0.5;
     }
-    .favorite {
-      display: block;
-      margin-top: 0.5rem;
-      color: red;
-      font-size: 1.2rem;
+    .favorite-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #999;
       cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    .favorite-icon:hover {
+      transform: scale(1.2);
+      color: red;
     }
     h2 {
       text-align: center;
@@ -102,23 +109,21 @@
 
   <h2>En Avantajlı Ürünler</h2>
   <section class="products">
-    <!-- 20 ürün örnekli yapı -->
-    <!-- Sadece 2 örnek ürün gösteriliyor. Devamı çoğaltılabilir. -->
     <div class="product">
+      <span class="favorite-icon" onclick="alert('Favorilere eklendi: iPhone 16 Kılıf ❤️')">♡</span>
       <a href="urun1.html" style="text-decoration:none; color:inherit;">
         <img src="images/kilif.jpg" alt="iPhone 16 Kılıf">
         <h3>iPhone 16 Kılıf</h3>
         <p>₺199</p>
       </a>
-      <span class="favorite" onclick="alert('Favorilere eklendi: iPhone 16 Kılıf ❤️')">♡ Favorilere Ekle</span>
     </div>
     <div class="product">
+      <span class="favorite-icon" onclick="alert('Favorilere eklendi: Bluetooth Hoparlör ❤️')">♡</span>
       <a href="urun2.html" style="text-decoration:none; color:inherit;">
         <img src="images/hoparlor.jpg" alt="Bluetooth Hoparlör">
         <h3>Bluetooth Hoparlör</h3>
         <p>₺399</p>
       </a>
-      <span class="favorite" onclick="alert('Favorilere eklendi: Bluetooth Hoparlör ❤️')">♡ Favorilere Ekle</span>
     </div>
   </section>
 
